@@ -1,0 +1,24 @@
+
+  GET|HEAD        / ................................................................................................... homepage › Front\HomepageController@index
+  POST            _ignition/execute-solution ...................................... ignition.executeSolution › Spatie\LaravelIgnition › ExecuteSolutionController
+  GET|HEAD        _ignition/health-check .................................................. ignition.healthCheck › Spatie\LaravelIgnition › HealthCheckController
+  POST            _ignition/update-config ............................................... ignition.updateConfig › Spatie\LaravelIgnition › UpdateConfigController
+  GET|HEAD        admin/articles ............................................................................ admin.articles.index › Back\ArticleController@index
+  POST            admin/articles ............................................................................ admin.articles.store › Back\ArticleController@store
+  GET|HEAD        admin/articles/olustur .................................................................. admin.articles.create › Back\ArticleController@create
+  GET|HEAD        admin/articles/{article} .................................................................... admin.articles.show › Back\ArticleController@show
+  PUT|PATCH       admin/articles/{article} ................................................................ admin.articles.update › Back\ArticleController@update
+  DELETE          admin/articles/{article} .............................................................. admin.articles.destroy › Back\ArticleController@destroy
+  GET|HEAD        admin/articles/{article}/guncelle ........................................................... admin.articles.edit › Back\ArticleController@edit
+  GET|HEAD        admin/login ........................................................................................... admin.login › Back\AuthController@login
+  POST            admin/login .................................................................................. admin.login.post › Back\AuthController@loginPost
+  GET|HEAD        admin/logout ........................................................................................ admin.logout › Back\AuthController@logout
+  GET|HEAD        admin/panel .................................................................................. admin.dashboard › Back\DashboardController@index
+  GET|HEAD        api/user ...................................................................................................................................... 
+  GET|HEAD        category/{category} .............................................................................. category › Front\HomepageController@category
+  GET|HEAD        contact ............................................................................................ contact › Front\HomepageController@contact
+  POST            contact ................................................................................... contact.post › Front\HomepageController@contactpost
+  GET|HEAD        sanctum/csrf-cookie ............................................................................... Laravel\Sanctum › CsrfCookieController@show
+  GET|HEAD        {category}/{slug} .................................................................................... single › Front\HomepageController@single
+  GET|HEAD        {page} ................................................................................................... page › Front\HomepageController@page
+
