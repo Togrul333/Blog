@@ -20,7 +20,7 @@ class PageSeeder extends Seeder
         $count=0;
         foreach ($pages as $page){
             $count++;
-            DB::table('Pages')->insert([
+            DB::table('pages')->insert([
                 'title'=>$page,
                 'slug'=>Str::slug($page),
                 'image'=>'https://assets.entrepreneur.com/content/3x2/2000/20160602195129-businessman-writing-planning-working-strategy-office-focus-formal-workplace-message.jpeg?crop=16:9',
